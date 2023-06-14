@@ -1,0 +1,11 @@
+{
+  "name": "resortes-v2-logica",
+  "version": "0.0.1",
+  "description": "logica para resolver resortes con metodo matricial de rigideces",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "eder_3232",
+  "license": "ISC"
+}
