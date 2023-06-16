@@ -4,8 +4,14 @@
   "description": "logica para resolver resortes con metodo matricial de rigideces",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "ts-node src/main.ts"
   },
   "author": "eder_3232",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "mathjs": "^11.8.1",
+    "ts-node": "^10.9.1",
+    "typescript": "^5.1.3"
+  }
 }
