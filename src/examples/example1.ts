@@ -4,10 +4,10 @@ import { Vertices } from '../models/vertices'
 
 const vertices1 = new Vertices()
 
-vertices1.add({ force: 0, displacement: 0, id: 'v1', isRestricted: true, userDOF: 1 })
-vertices1.add({ force: -4, displacement: 0, id: 'v2', isRestricted: false, userDOF: 2 })
-vertices1.add({ force: -8, displacement: 0, id: 'v3', isRestricted: false, userDOF: 3 })
-vertices1.add({ force: 20, displacement: 0, id: 'v4', isRestricted: false, userDOF: 4 })
+vertices1.add({ force: 0, displacement: 0, id: 'v1', isRestricted: true, userDOF: { x: 1 } })
+vertices1.add({ force: -4, displacement: 0, id: 'v2', isRestricted: false, userDOF: { x: 2 } })
+vertices1.add({ force: -8, displacement: 0, id: 'v3', isRestricted: false, userDOF: { x: 3 } })
+vertices1.add({ force: 20, displacement: 0, id: 'v4', isRestricted: false, userDOF: { x: 4 } })
 
 console.log(vertices1)
 

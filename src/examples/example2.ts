@@ -4,11 +4,11 @@ import { Vertices } from '../models/vertices'
 
 const vertices2 = new Vertices()
 
-vertices2.add({ force: 0, displacement: 0, id: 'v4', isRestricted: true, userDOF: 1 })
-vertices2.add({ force: 0, displacement: 0, id: 'v5', isRestricted: true, userDOF: 2 })
-vertices2.add({ force: 5, displacement: 0, id: 'v1', isRestricted: false, userDOF: 3 })
-vertices2.add({ force: 4, displacement: 0, id: 'v2', isRestricted: false, userDOF: 4 })
-vertices2.add({ force: 0, displacement: 0, id: 'v3', isRestricted: false, userDOF: 5 })
+vertices2.add({ force: 0, displacement: 0, id: 'v4', isRestricted: true, userDOF: { x: 1 } })
+vertices2.add({ force: 0, displacement: 0, id: 'v5', isRestricted: true, userDOF: { x: 2 } })
+vertices2.add({ force: 5, displacement: 0, id: 'v1', isRestricted: false, userDOF: { x: 3 } })
+vertices2.add({ force: 4, displacement: 0, id: 'v2', isRestricted: false, userDOF: { x: 4 } })
+vertices2.add({ force: 0, displacement: 0, id: 'v3', isRestricted: false, userDOF: { x: 5 } })
 
 const edges2 = new Edges(vertices2.getData())
 
