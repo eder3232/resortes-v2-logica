@@ -47,6 +47,15 @@ export class Vertices {
             throw new Error(`El nudo ${id} ya existe.`)
         }
 
+        for (const a of this.utils.axisDOF) {
+            if (isRestricted === true && force !== 0) {
+                throw new Error(`El nudo ${id} no puede tener fuerza aplicada porque está restringido.`)
+            }
+            if (isRestricted === false && displacement !== 0) {
+                throw new Error(`El nudo ${id} no puede tener desplazamiento porque no está restringido.`)
+            }
+        }
+
         const DOF: { x: { internal: number, user: number } } = {
             x: { internal: 0, user: userDOF.x }
         }
